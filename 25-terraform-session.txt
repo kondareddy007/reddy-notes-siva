@@ -1,5 +1,8 @@
 25-video- description:- 
 ----------------------
+1)Install Terraform
+2)Install aws cli
+
 Search--> Terraform download
 link:-https://developer.hashicorp.com/terraform/install
 Terraform install on mac OS:- 
@@ -14,4 +17,33 @@ Window:-
 > To authenticate aws account, we have to install the aws cli 
 search ->aws cli install
 link:-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+download aws cli file and install.
 
+Ctreate IAM user in AWS:-
+-----------------------
+>IAM Dashbord-->user-->create user--> give name--> next--> click attach policy directly -->give administratoracces-->create user.
+> click on user-->security credential--> create access key--> copy accesskey and secret access key.
+> Turn on terminal
+# aws configure
+# accesskey and secret access key and region name
+> Now you able to authenticate with aws account.
+Terraform link: https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+search--> terraform aws ec2
+link: 
+Error: Retrieving AWS account details: validating provider credentials: retrieving caller identity from STS: operation error STS: GetCallerIdentity, https response error StatusCode: 403, RequestID: 599f053e-80bd-42c5-a6ab-8c9dbf54bcaa, api error InvalidClientTokenId: The security token included in the request is invalid.
+Solution: deleted IAM user and recreate user and get accesskey and secret accesskey
+
+# terraform init  --> it will create the .terraform fiel and download the plugind 
+# terraform validate 
+# terminal plan
+# terraform apply  --> create the aws instances
+# terraform apply -auto-approve 
+# terraform destroy --> delete the instances
+
+variables:
+----------
+search --> terraform aws security group
+link:- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group
+search--> terraform aws ec2
+variables:
+---------
