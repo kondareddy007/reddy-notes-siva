@@ -1,7 +1,13 @@
 25-video- description:- 
 ----------------------
-1)Install Terraform
-2)Install aws cli
+1)Install aws cli
+2)Install Terraform
+3)create IAM user and Generate accesskey and secret accesskey
+4)Created provider.tf and ec2.tf
+5)security_group
+6)varaible.tf
+7).gitignore
+
 
 Search--> Terraform download
 link:-https://developer.hashicorp.com/terraform/install
@@ -39,6 +45,7 @@ Solution: deleted IAM user and recreate user and get accesskey and secret access
 # terraform apply  --> create the aws instances
 # terraform apply -auto-approve 
 # terraform destroy --> delete the instances
+terraform destroy -auto-approve 
 
 variables:
 ----------
@@ -47,3 +54,8 @@ link:- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resourc
 search--> terraform aws ec2
 variables:
 ---------
+syntax:
+varaible "varaible_name" {
+    type = string  #optional
+    default = ""
+}
