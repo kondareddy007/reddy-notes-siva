@@ -1,0 +1,48 @@
+This 14-session video.
+DATE=15/07/2024
+
+Using loops installed any nnumber of packages
+==============================================
+sh 13.installed-packagres.sh git mysql gcc postfix net-tools
+
+$# - no of argmnets
+$@ - all arguments.
+
+SED - streamline editor:-
+-----------------------
+CRUD
+ sed -e "1 a i am learning" passwd
+ data will append after first lind
+ sed -i "1 i i am learning" password
+ data will insert before first line.
+-e --> data append temporarly only not permanent.
+-i -->append the data permanently
+ -e --> enamble 
+ 1--> first line
+ a -->append
+ after first line append " i am learning" data to passwd file.
+
+Update Lines:
+------------
+sed -e 's/word-to-find/word-to-replace/' passwd
+sed -e 's/sbin/SBIN/' passwd --> temporarly SBIN replace in sbin in passwd file.
+sed -i 's/sbin/SBIN/' passwd -->permanantly SBIN  replace in sbin in passwd file.
+sed -i 's/sbin/SBIN/' passwd --> in all line SBIN replace in sbin in passwdfile.
+sed -i '/leaning/ d' passwd --> leaning line is deleted in passwd file
+sed -i '1d' passwd --->first line is deleted
+s-->substitute
+
+catalogue.sh:-
+-------------
+mkdir -p /app -->
+
+MomgoDB installation through script:-
+-------------------------------------
+1. check root user or not 
+2. if root user
+        check package is already installed or not
+        if already installed skipp it and tell user, Already installed
+        if not installed, install it.
+        validate it
+    if not root user 
+                throw the error.

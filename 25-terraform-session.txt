@@ -1,0 +1,17 @@
+25-video- description:- 
+----------------------
+Search--> Terraform download
+link:-https://developer.hashicorp.com/terraform/install
+Terraform install on mac OS:- 
+---------------------------
+#brew tap hashicorp/tap
+#brew install hashicorp/tap/terraform
+
+Window:-
+--------
+>download AMD64.zip file and extract it and copy terraform.exe file and paste in c:/software foleder
+>setup envronment variable->system varaible--> PATH -->edit--> add path(c:/software)
+> To authenticate aws account, we have to install the aws cli 
+search ->aws cli install
+link:-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+

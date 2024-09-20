@@ -1,0 +1,11 @@
+Domain register
+---------------
+mail: kondareddy.devops@gmail.com
+
+hostinger --> reddy1229.online (DNS Name)
+
+hostinger responsible is to update, Kondareddy with details brought reddy1229.online
+and namespace are 
+
+ns1.dns-parking.com
+ns2.dns-parking.com

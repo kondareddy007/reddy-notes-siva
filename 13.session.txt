@@ -1,0 +1,65 @@
+This is 13 session notes.
+greatertan --> -gt 
+lessthan --> -lt 
+greatertan equal --> -ge 
+lessthan equal --> -le 
+not equl --> -ne or !=
+EXIT STATUS:-
+===========
+shellscript won't stop if it faces the error.
+it is our responsible for clear the errors.
+if you give the exit status it will stop the error. Other wise it will go to next error 
+exit 1 #You can give otherthan 0.
+
+$? --> if success, it has 0. if failed, not zero.
+function --> Code that is repeated again, you can keep repeated code in function and call it whenever you wnat.
+FUNCTION_NAME(){
+    statement to run
+}
+VALIDATE(){
+    statment to run
+}
+FUNCTION_NAME --> for calling the function.
+
+How to get the logs for previous run script:-
+-------------------------------------------
+less /var/log/message
+storing logs --> what happend yesterday
+> -->redirections
+1>---> success
+2> --->failure
+&> ---->success and failure
+ls -lrt &>temp.log ---> result is stored in temp.log file if command is correct and wrong.
+$? -->exit status of previous command
+$0 --> display script name.
+$1--> first argument
+$2-->second argument.
+$N -->N'th argument
+$@ --> all arguments
+$# --> enni arguments pass chesamo thelusukovadaniki.
+
+Colors:-
+-------
+Red -- \e[31m
+Green -- \e[32m
+Yellow -- \e[33m
+normal -- \e[0m\
+
+echo -e "$Red This is red clor $N"
+
+loops:-
+-------
+Syntax:- for i in {1..10}
+        do 
+          echo "print $i"
+        done
+
+
+############Install my sql through shell script#############
+#1.chech user is root ot not
+# root user id is always 0. if not 0 then it is not root user 
+# id -u (command for check root or not)
+# if root then proceed if not root then show the error
+# 2.Now install mysql
+# 3.check weather mysql is installed properly or not
+#if installed then good other wise send error

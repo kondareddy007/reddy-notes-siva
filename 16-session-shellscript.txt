@@ -1,0 +1,44 @@
+Date: 18/07/2024
+###This is 16 session video ###
+Topisc:-
+--------
+Delete old log files 
+Disk usage and alerts
+
+1. we have folder where we have storing the logs
+/tmp/shell-scripts-logs/
+
+delete the logs more than 14 days. delete only .logs file ont other files.
+
+#touch -d 20240718 cart.log --> we can create file by adte wide if you use -d.
+-d --> directory and you can give -f for files
+#find . -type f -mtime +14 -name "*.log"
+. -->Current directory
+f --> file
+mtime --> time 
+while IFS= read -r line   #IFS means Internal fiels saperator.
+
+sh -x delet_log_files.sh
+
+Disk ussage:-
+-----------
+Monitoring team always checking the memory, cpu, node status etc...
+Servers are down/more memory --->alert Devops team.
+
+How to increase volume for instance:-
+-----------------------------------
+Go to aws conslo -->Check instance availability zone --->click on the volume 
+---> Create the volume in same availability zone (ex: 12 GB )
+
+For mount volume to instance we need to run below commends
+https://docs.aws.amazon.com/ebs/latest/userguide/ebs-using-volumes.html
+
+lsblk
+sudo file -s /dev/xvdf
+sudo lsblk -f
+sudo mkfs -t xfs /dev/xvdf
+sudo mkdir /data
+sudo mount /dev/xvdf /data
+
+df -hT | grep -vE "tmp|Filesystem"   # tmp and Filesystem  lines are not displayed. remaining all files displayed expect tmp and filesystem.
+message+="High disk ussage on $partition: $ussage \n"
