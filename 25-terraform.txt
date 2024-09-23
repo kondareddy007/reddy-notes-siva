@@ -55,6 +55,7 @@ search--> terraform aws ec2
 variables:
 ---------
 syntax:
+
 varaible "varaible_name" {
     type = string  #optional
     default = ""

@@ -1,0 +1,17 @@
+Variable in Terraform:- Date(20/09/2024)
+----------------------
+preferences:-
+
+1. command line prompt
+# terraform plan -var="instance_type=t3.medium"
+#export TF_VAR_instance_type=t3.xlarge
+2. terraform.tfvars
+#terraform plan -var-file="roboshop.tfvars"
+3. Variable
+#terraform plan
+terraform plan -var-file="roboshop.tfvars"
+terraform plan -var-file="roboshop.tfvars" -var="instance_type=t3.medium"
+>if youn mention instance_type=t2.micro and you created file terraform.tfvars and inside instance_type=t2.small. terraform will take terraform.tfvars file data first preferences.
+>terraform plan -var="instance_type=t3.medium"  terraform will take first prferesnces command line prompt first
+
+ 
