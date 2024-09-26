@@ -15,6 +15,7 @@ count = length(var.instance_name)
 
 reddy.terraform.multi.env commands:
 -----------------------------------
+tfvars folder
 dev:-
 # terraform init -backend-config=dev/backend.tf 
 # terraform plan -var-file=dev/dev.tfvars 
@@ -29,3 +30,17 @@ terraform destroy -var-file=prod/dprodev.tfvars
 
 Note: if you want to change the env (prod to dev) you have to -reconfigure again
 # terraform init -reconfigure -backend-config=dev/backend.tf
+
+workspace folder:-
+#terraform init
+#terraform workspace list
+#terraform workspace new dev
+#terraform workspace new prod
+#terraform workspace list --> list all env
+#terraform workspace show --> showing current env
+# terraform workspace select dev --> to move dev env
+
+Provisioners:-
+------------
+#terraform init
+#terraform apply -auto-approve
