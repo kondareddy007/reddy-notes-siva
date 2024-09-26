@@ -1,0 +1,31 @@
+reddy-terraform-multi-env 
+-------------------------
+functions:-
+----------
+1.startswith() function
+2. lenght() function
+startwith("hello world", "hello") --> true
+startwith("hello world", "world") --> false
+example: 
+#records = [each.key == "web" ? each.value.public_ip : each.value.private_ip]
+records = [startswith(each.key, "web") ? each.value.public_ip : each.value.private_ip]
+
+#count = 11
+count = length(var.instance_name)
+
+reddy.terraform.multi.env commands:
+-----------------------------------
+dev:-
+# terraform init -backend-config=dev/backend.tf 
+# terraform plan -var-file=dev/dev.tfvars 
+terraform apply -var-file=dev/dev.tfvars
+terraform destroy -var-file=dev/dev.tfvars
+
+prod:-
+terraform init -reconfigure -backend-config=prod/backend.tf
+terraform plan -var-file=prod/prod.tfvars  
+terraform apply -var-file=prod/prod.tfvars
+terraform destroy -var-file=prod/dprodev.tfvars
+
+Note: if you want to change the env (prod to dev) you have to -reconfigure again
+# terraform init -reconfigure -backend-config=dev/backend.tf
