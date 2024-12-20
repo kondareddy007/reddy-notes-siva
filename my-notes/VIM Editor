@@ -1,0 +1,13 @@
+Editor
+-----------
+vim --> visually improved
+vim <file-name>
+Colon/Command Mode
+---------------
+:q --> Quit
+:wq --> write and quit
+:q! --> dont save the changes and exit
+:set nu
+:set nonu
+:/<word-to-find> --> search from top
+:?<word-to-find> --> search from bottom
