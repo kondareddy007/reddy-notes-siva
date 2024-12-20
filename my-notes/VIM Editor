@@ -11,3 +11,9 @@ Colon/Command Mode
 :set nonu
 :/<word-to-find> --> search from top
 :?<word-to-find> --> search from bottom
+u
+yy
+dd
+p
+shift+g --> takes bottom
+gg --> takes to top
