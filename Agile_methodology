@@ -1,0 +1,58 @@
+Agile
+-------------------------
+Sprints --> Installment based based deliveries
+
+modules -->
+User management --> 1 months
+	signup
+	login
+	forgot password
+	change password
+
+product management
+	list the products
+	prices
+cart
+	add to cart
+shipping
+	adding address
+payment
+order management
+
+User management --> 1 months
+15 days --> development
+15 days --> testing and deployment
+
+testing --> 30 defects
+10 invalid defects
+
+client test the user management --> 10 bugs
+
+product management == clear the previous bugs and develop product management
+
+ferrari == fortuner
+
+DevOps with Agile
+-----------------------
+DAY-1
+
+developer writes some code, the same day build(compile and pack) the code, test it
+
+100 lines of code --> testing is simple
+no of invalid defects are less
+2 valid defects --> very easy to developer
+Ops --> testing, build and release(DevOps)
+
+We create a process called CICD with the help of tools, the same day we are able to build and test the application
+
+DEV QA UAT PRE-PROD PERF PROD
+
+1. Faster releases
+2. Less defects
+
+speed and accuracy
+
+DevOps == Continous improvement
+	DevSecOps --> added security inside it
+	shift left
+	GitOps --> Entire process should be in Git.
