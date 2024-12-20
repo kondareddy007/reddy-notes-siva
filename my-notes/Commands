@@ -1,0 +1,7 @@
+#ssh-keygen -f <file-name>, I should have some client to connect Linux server
+#ssh-rsa <random-code> laptop-username@laptop-name
+#ssh -i <private-key-path> ec2-user@IP
+** absolute(complete) path and relative path
+cd .. --> relative path
+cd /home/ec2-user --> absolute
+#
