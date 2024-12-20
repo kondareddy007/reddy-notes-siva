@@ -4,4 +4,6 @@
 ** absolute(complete) path and relative path
 cd .. --> relative path
 cd /home/ec2-user --> absolute
+#curl and wget
+wget is used to download the files, curl is used to show the text directly on the terminal. curl is used to run the scripts
 #
