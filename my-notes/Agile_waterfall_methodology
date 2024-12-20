@@ -1,3 +1,26 @@
+Waterfall Model
+------------------
+fathers generation == Waterfall model
+
+2 years time to complete
+
+stakeholders = customers, developers, testers, managers, end users, etc.
+
+developers --> are they serious from DAY-1
+testers --> no they are not serious
+clients --> they are worried from DAY-1
+
+after 1 year they got seriousness
+
+developers develop it in 6 months
+deploy the application --> build and release in DEV
+
+testers starting testing --> 100 defects
+some are invalid --> 20 invalid defects
+
+after 2 years, they release something --> maruti 800
+
+
 Agile
 -------------------------
 Sprints --> Installment based based deliveries
