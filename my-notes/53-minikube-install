@@ -50,18 +50,17 @@ metadata:
 
 kubectl create -f <your.yaml> --> create resources, if you use this once again, you get error
 kubectl apply -f <your.yaml> --> if not created it will create, if you use again any changes it will update or it will say unchanged.
-
 kubectl delete -f yamlfile.yaml --> delete the resources
-
+kubectl get namespaces
 kubectl get namespaces --> will get all namespaces in cluster
-
 kubectl get nodes
 
 pod --> a simple container, it is a smallest deployable unit in kuberenetes
 
 pod vs container
 -----------------
-a pod can contain multiple containers, it is the smallest thing in kuberenetes
+a pod can contain multiple containers, it is the smallest thing in kuberenetes.
+all containers shared same storage and network.
 
 docker run -d -p 80:80 -v nginx:/usr/share/nginx/html --name roboshop-nginx nginx
 
@@ -75,6 +74,8 @@ services:
 	  - source:
 		target:
 
+if you not mention any namespace it will create in default namespace.
+kubernates pull image from dockerHub.
 labels vs annotaions
 --------------------
 labels --> have some limitation on the length and charecters of key and values
